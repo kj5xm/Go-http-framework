@@ -19,7 +19,7 @@ func main() {
 	r := gee.New()
 	r.Use(gee.Logger())
 	r.GET("/", func(c *gee.Context) {
-		c.HTML(http.StatusOK, "<h1>Hello Gee</h1>")
+		c.HTML(http.StatusOK, "<h1>Hello Gee</h1>\n")
 	})
 
 	v2 := r.Group("/v2")
